@@ -13,8 +13,10 @@ var hasUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 
 // created a function for my user input
 function userInput() {
-  var length = parseInt(prompt("Enter the length of your password"), 10);
+  // capturing userInput and converting it into a number
+  var length = parseInt(prompt("Enter the length of your password"),10);
   console.log(length);
+  // check if userInput is a number if its not alert to the user it has to be a number
   if (Number.isNaN(length)) {
     alert("It has to be a number!");
     return null;
