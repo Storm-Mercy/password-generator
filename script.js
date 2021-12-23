@@ -2,6 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Assignment Code
+// created arrays to pull from later
 var specialCharacters = ["@", "%", "+", "\\", "/", "'", "!", "#", "$", "^", "?", ":", ",", ")", "(", "}", "{", "]", "[", "~", "-", "_", "."];
 
 var hasNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -10,6 +11,7 @@ var hasLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 
 var hasUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
+// created a function for my user input
 function userInput() {
   var length = parseInt(prompt("Enter the length of your password"), 10);
   console.log(length);
@@ -29,13 +31,13 @@ function userInput() {
   console.log(confirmSpecial);
 
   var confirmUpper = confirm("Click ok to inculde uppercase characters");
-  console.log(confirmUpper)
+  console.log(confirmUpper);
 
   var confirmLower = confirm("Click ok to inculde lowercase characters");
-  console.log(confirmLower)
+  console.log(confirmLower);
 
   if (confirmNumbers === false && confirmSpecial === false && confirmUpper === false && confirmLower === false) {
-    alert("You have to choose at least one!")
+    alert("You have to choose at least one!");
     return null;
   }
   var answers = {
@@ -47,13 +49,13 @@ function userInput() {
   };
   return answers;
 }
-
+// created a function for getting a random value
 function getRandom(arr) {
   var indexRandom = Math.floor(Math.random() * arr.length);
   var randomValue = arr[indexRandom];
   return indexRandom;
 }
-
+// created a function for getting a random value and some conditional statements
 function generatePassword() {
   var options = userInput();
   var result = [];
