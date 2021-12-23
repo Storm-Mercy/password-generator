@@ -57,7 +57,7 @@ function getRandom(arr) {
   var randomValue = arr[indexRandom];
   return randomValue;
 }
-// created a function for getting a random value and some conditional statements
+// created a function for getting a random value and is followed by conditional statements
 function generatePassword() {
   var options = userInput();
   var result = [];
