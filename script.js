@@ -25,16 +25,16 @@ function userInput() {
   }
 
   var confirmNumbers = confirm("Click ok to include numbers");
-  console.log(confirmNumbers);
+  // console.log(confirmNumbers);
 
   var confirmSpecial = confirm("Click ok to include special characters");
-  console.log(confirmSpecial);
+  // console.log(confirmSpecial);
 
   var confirmUpper = confirm("Click ok to inculde uppercase characters");
-  console.log(confirmUpper);
+  // console.log(confirmUpper);
 
   var confirmLower = confirm("Click ok to inculde lowercase characters");
-  console.log(confirmLower);
+  // console.log(confirmLower);
 
   if (confirmNumbers === false && confirmSpecial === false && confirmUpper === false && confirmLower === false) {
     alert("You have to choose at least one!");
@@ -53,7 +53,7 @@ function userInput() {
 function getRandom(arr) {
   var indexRandom = Math.floor(Math.random() * arr.length);
   var randomValue = arr[indexRandom];
-  return indexRandom;
+  return randomValue;
 }
 // created a function for getting a random value and some conditional statements
 function generatePassword() {
